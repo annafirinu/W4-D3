@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexible Article</title>
+    <style>
+      section {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+        border: 1px solid #fbf7e3;
+        border-radius: 50px;
+        background-color: #fbf7e3;
+        color: #612407;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      section img {
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      @media screen and (min-width: 576px) {
+        .div1 {
+          display: flex;
+          flex-direction: column;
+          order: 2;
+          margin-left: 1em;
+        }
+        .div1 p {
+          font-size: 0.8em;
+        }
+        section {
+          flex-direction: row;
+          align-items: center;
+        }
+        section img {
+          flex-grow: 3;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="div1">
+          <h3>Our delicious honey</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+            delectus doloremque nam quam officiis natus ea a vero molestiae
+            veniam reprehenderit, dolores debitis voluptatibus eligendi
+            consequuntur at laboriosam. Unde, in? Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Sequi voluptatem alias sit commodi?
+            Laborum culpa molestias quia exercitationem similique. Quisquam
+            harum qui accusamus, est earum inventore soluta expedita ullam
+            corporis?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Nulla quos, eaque deleniti repellat maxime temporibus nesciunt
+            aliquid perferendis explicabo recusandae minus laboriosam,
+            voluptates repellendus molestias magni saepe autem vel labore.
+          </p>
+        </div>
+        <div class="div2">
+          <img src="./assets/imgs/honey.jpg" />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
